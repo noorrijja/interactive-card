@@ -167,7 +167,8 @@ button {
 }
 
 @media (max-width: 375px) {
-  .container {
+  .container,
+  .after-submission  {
     width: 90%;
     height: auto;
     padding: 20px;
@@ -176,7 +177,8 @@ button {
 
 /* Media query for iPhone XR */
 @media (max-width: 828px) {
-  .container {
+  .container,
+  .after-submission  {
     width: 80%; /* Adjust this value based on your design */
   }
 }
