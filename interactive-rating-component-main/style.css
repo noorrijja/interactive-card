@@ -1,0 +1,182 @@
+body {
+  position: relative;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(210, 10%, 4%);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 350px;
+  height: 370px;
+  background-image: linear-gradient(hsl(212, 16%, 16%) 20%, hsl(216, 12%, 8%));
+  color: white;
+  border-radius: 20px;
+  padding: 30px 30px;
+}
+
+.star-background {
+  background-color: hsl(212, 16%, 21%);
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.level-1,
+.level-2,
+.level-3,
+.level-4,
+.level-5 {
+  background-color: hsl(212, 16%, 21%);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  color: hsl(217, 12%, 63%);
+}
+
+.no-of-submissions {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  font-size: 18px;
+}
+
+.circle-button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.circle-button:active {
+  color: white;
+  background-color: hsl(217, 12%, 63%);
+}
+
+.text > .heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.text .content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: hsl(217, 12%, 63%);
+}
+
+.after-submission {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 350px;
+  height: 370px;
+  background-image: linear-gradient(hsl(212, 16%, 16%) 20%, hsl(216, 12%, 8%));
+  color: white;
+  border-radius: 20px;
+  padding: 35px 35px;
+}
+
+.illustration-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 14px;
+}
+
+.changing-text {
+  background-color: hsl(212, 16%, 21%);
+  width: auto;
+  height: auto;
+  border-radius: 50px;
+  text-align: center;
+  line-height: auto;
+  color: #fb7413;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 12px;
+}
+
+/* .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+} */
+
+.thankyou-heading {
+  text-align: center;
+}
+
+.thankyou-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  color: hsl(217, 12%, 63%);
+}
+
+.content > .thankyou-heading {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.rate-again {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* @media only screen and (max-width: 375px) {
+  .after-submission {
+    width: auto;
+    height: auto;
+  }
+} */
