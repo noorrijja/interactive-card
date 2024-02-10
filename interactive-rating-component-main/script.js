@@ -28,16 +28,17 @@ rateAgain.addEventListener("click", function () {
   }
 });
 
-// const newText = document.getElementByClassName("new");
-
 const buttons = document.querySelectorAll(".circle-button");
 
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function () {
     this.classList.toggle("active");
     updateButtonStyles(this);
-
-    // newText.innerHTML = this.innerHTML;
+  });
+  buttons[i].addEventListener("click", function () {
+    const number = this.innerHTML;
+    const a = document.querySelector(".changing-text");
+    a.innerHTML = "You selected " + number + " out of 5";
   });
 }
 
@@ -46,7 +47,6 @@ function updateButtonStyles(button) {
     button.style.color = "white";
     button.style.backgroundColor = "hsl(217, 12%, 63%)";
   } else {
-    // Reset to default styles when not active
     button.style.color = "";
     button.style.backgroundColor = "";
   }
